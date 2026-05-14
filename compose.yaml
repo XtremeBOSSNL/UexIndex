@@ -1,0 +1,7 @@
+﻿services:
+  uexindex.server:
+    image: uexindex.server
+    build:
+      context: .
+      dockerfile: UexIndex.Server/Dockerfile
+
