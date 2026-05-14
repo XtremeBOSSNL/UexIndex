@@ -16,7 +16,7 @@ public class MyEndpoint : Endpoint<MyRequest, MyResponse>
     {
         await Send.OkAsync(new()
         {
-            FullName = req.FirstName + " | " + req.LastName,
+            FullName = req.FirstName + " + " + req.LastName,
             IsOver30 = req.Age > 30
         });
     }
